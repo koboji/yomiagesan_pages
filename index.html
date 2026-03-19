@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>読み上げさん - サポート</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Hiragino Sans', sans-serif; color: #333; background: #fafafa; line-height: 1.7; }
+        .header { background: linear-gradient(135deg, #ff6a99, #ff8fb1); color: white; padding: 60px 20px; text-align: center; }
+        .header h1 { font-size: 2.2em; margin-bottom: 8px; }
+        .header p { font-size: 1.1em; opacity: 0.9; }
+        .container { max-width: 720px; margin: 0 auto; padding: 40px 20px; }
+        h2 { font-size: 1.4em; color: #ff6a99; margin: 32px 0 16px; padding-bottom: 8px; border-bottom: 2px solid #ffe0ea; }
+        h3 { font-size: 1.1em; margin: 20px 0 8px; }
+        .faq { background: white; border-radius: 12px; padding: 20px; margin: 12px 0; box-shadow: 0 2px 8px rgba(0,0,0,0.06); }
+        .faq .q { font-weight: 600; margin-bottom: 6px; }
+        .faq .q::before { content: "Q. "; color: #ff6a99; font-weight: 700; }
+        .faq .a { color: #666; font-size: 0.95em; }
+        .faq .a::before { content: "A. "; color: #999; font-weight: 600; }
+        .nav { text-align: center; margin: 40px 0 20px; }
+        .nav a { display: inline-block; margin: 0 12px; color: #ff6a99; text-decoration: none; font-weight: 500; }
+        .nav a:hover { text-decoration: underline; }
+        .footer { text-align: center; padding: 30px 20px; color: #999; font-size: 0.85em; border-top: 1px solid #eee; margin-top: 40px; }
+        .features { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin: 16px 0; }
+        .feature { background: white; border-radius: 10px; padding: 16px; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.06); }
+        .feature .icon { font-size: 2em; margin-bottom: 8px; }
+        .feature .label { font-weight: 600; font-size: 0.9em; }
+        @media (max-width: 480px) { .features { grid-template-columns: 1fr; } .header h1 { font-size: 1.6em; } }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>読み上げさん</h1>
+        <p>テキストを自然な音声で読み上げ</p>
+    </div>
+
+    <div class="nav">
+        <a href="#features">機能</a>
+        <a href="#faq">よくある質問</a>
+        <a href="privacy.html">プライバシーポリシー</a>
+        <a href="#contact">お問い合わせ</a>
+    </div>
+
+    <div class="container">
+        <h2 id="features">主な機能</h2>
+        <div class="features">
+            <div class="feature"><div class="icon">🔊</div><div class="label">テキスト読み上げ</div></div>
+            <div class="feature"><div class="icon">📷</div><div class="label">画像から文字認識</div></div>
+            <div class="feature"><div class="icon">📂</div><div class="label">フォルダ管理</div></div>
+            <div class="feature"><div class="icon">🎵</div><div class="label">バックグラウンド再生</div></div>
+            <div class="feature"><div class="icon">⏱️</div><div class="label">スリープタイマー</div></div>
+            <div class="feature"><div class="icon">🌙</div><div class="label">ダークモード</div></div>
+        </div>
+
+        <h2 id="faq">よくある質問</h2>
+
+        <h3>基本的な使い方</h3>
+        <div class="faq">
+            <div class="q">テキストを追加するには？</div>
+            <div class="a">ホーム画面下部の「＋」ボタンから、テキスト入力・ファイル読み込み・画像から読み込みの3つの方法でテキストを追加できます。</div>
+        </div>
+        <div class="faq">
+            <div class="q">バックグラウンドでも再生できる？</div>
+            <div class="a">はい。アプリを閉じても読み上げは継続します。ロック画面やコントロールセンターから一時停止・再開が可能です。</div>
+        </div>
+        <div class="faq">
+            <div class="q">フォルダにテキストを移動するには？</div>
+            <div class="a">テキストを左にスワイプすると「移動」ボタンが表示されます。タップしてフォルダを選択してください。</div>
+        </div>
+
+        <h3>音声について</h3>
+        <div class="faq">
+            <div class="q">無料で使える音声は？</div>
+            <div class="a">Apple標準音声は完全無料でオフラインでも利用できます。端末の「設定 → アクセシビリティ → 読み上げコンテンツ → 声 → 日本語」から高品質音声をダウンロードすると、より自然な読み上げになります。</div>
+        </div>
+        <div class="faq">
+            <div class="q">男性と女性の声が同じに聞こえる</div>
+            <div class="a">高品質音声がダウンロードされていない可能性があります。上記の手順で高品質音声をダウンロードしてください。</div>
+        </div>
+        <div class="faq">
+            <div class="q">Google Cloud TTSとは？</div>
+            <div class="a">Googleが提供する高品質な音声合成サービスです。利用にはAPIキーが必要ですが、月間約350万文字まで無料で利用できます。APIキーがなくてもApple音声で全機能をご利用いただけます。</div>
+        </div>
+
+        <h3>トラブルシューティング</h3>
+        <div class="faq">
+            <div class="q">音声が出ない</div>
+            <div class="a">端末の音量を確認してください。マナーモードでも再生されますが、音量がゼロの場合は聞こえません。</div>
+        </div>
+        <div class="faq">
+            <div class="q">OCR（文字認識）の精度が悪い</div>
+            <div class="a">明るい環境で、文字がはっきり見えるように撮影してください。印刷された文字は高精度で認識できますが、手書き文字は精度が下がる場合があります。</div>
+        </div>
+
+        <h2 id="contact">お問い合わせ</h2>
+        <p>ご質問やご要望がありましたら、以下までお気軽にご連絡ください。</p>
+        <p style="margin-top: 12px;"><strong>メール:</strong> <a href="mailto:yomiagesan@koboji.com" style="color: #ff6a99;">yomiagesan@koboji.com</a></p>
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2026 読み上げさん. All rights reserved.</p>
+        <p style="margin-top: 8px;"><a href="privacy.html" style="color: #999;">プライバシーポリシー</a></p>
+    </div>
+</body>
+</html>
